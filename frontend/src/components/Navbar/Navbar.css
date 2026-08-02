@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 60%;
+    z-index: 1000;
+    top: 1rem;
+    margin: 0 auto;
+    position: sticky;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    font-weight: lighter;
+    gap: 5px;
+}
+
+.user-avtaar{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-logo{
+    font-size: xx-large;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.nav-logo:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .navbar{
+        width: 100%;
+        top: 0;
+        border-radius: 0;
+    }
+
+    .nav-content{
+        width: 60%;
+    }
+}

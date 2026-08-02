@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.register{
+    margin-top: 2rem;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 5;
+}
+
+@media screen and (max-width: 576px){
+    .register{
+        box-shadow: none;
+        margin-top: 0;
+        padding-top: 2rem;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.register-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.register-form > * {
+    width: 300px;
+}
+
+.signup-utils{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form-submit-button{
+    margin-top: 0.5rem;
+}
+
+.open-authorization{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#google-oauth:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
